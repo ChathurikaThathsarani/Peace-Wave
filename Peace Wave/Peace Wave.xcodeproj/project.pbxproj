@@ -1,0 +1,976 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E20A8D7D2C15B74700CADEFF /* PieChartData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D7C2C15B74700CADEFF /* PieChartData.swift */; };
+		E20A8D7F2C15B77A00CADEFF /* PieChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D7E2C15B77A00CADEFF /* PieChartView.swift */; };
+		E20A8D822C15BF7100CADEFF /* StressLogCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D812C15BF7100CADEFF /* StressLogCardView.swift */; };
+		E20A8D842C15C07B00CADEFF /* MoodCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D832C15C07B00CADEFF /* MoodCardView.swift */; };
+		E20A8D862C15C11B00CADEFF /* DetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D852C15C11B00CADEFF /* DetailCard.swift */; };
+		E20A8D882C15C31E00CADEFF /* ExerciseTypeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D872C15C31E00CADEFF /* ExerciseTypeCardView.swift */; };
+		E20A8D8A2C15C4A700CADEFF /* ExerciseLogCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D892C15C4A700CADEFF /* ExerciseLogCardView.swift */; };
+		E20A8D8C2C15FF6200CADEFF /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D8B2C15FF6200CADEFF /* Audio.swift */; };
+		E20A8D8E2C15FF9200CADEFF /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D8D2C15FF9200CADEFF /* AudioManager.swift */; };
+		E20A8D902C16015F00CADEFF /* AudioRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D8F2C16015F00CADEFF /* AudioRowView.swift */; };
+		E20A8D922C1601FE00CADEFF /* ARViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D912C1601FE00CADEFF /* ARViewItem.swift */; };
+		E20A8D942C16026500CADEFF /* ARCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20A8D932C16026500CADEFF /* ARCardView.swift */; };
+		E210769B2C10A8EE003F9FFA /* Peace_WaveApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210769A2C10A8EE003F9FFA /* Peace_WaveApp.swift */; };
+		E210769D2C10A8EE003F9FFA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E210769C2C10A8EE003F9FFA /* ContentView.swift */; };
+		E210769F2C10A8F1003F9FFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E210769E2C10A8F1003F9FFA /* Assets.xcassets */; };
+		E21076A22C10A8F1003F9FFA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E21076A12C10A8F1003F9FFA /* Preview Assets.xcassets */; };
+		E21076A42C10A8F1003F9FFA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076A32C10A8F1003F9FFA /* Persistence.swift */; };
+		E21076A72C10A8F1003F9FFA /* Peace_Wave.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E21076A52C10A8F1003F9FFA /* Peace_Wave.xcdatamodeld */; };
+		E21076B12C10A8F2003F9FFA /* Peace_WaveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076B02C10A8F2003F9FFA /* Peace_WaveTests.swift */; };
+		E21076BD2C10A8F2003F9FFA /* Peace_WaveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076BC2C10A8F2003F9FFA /* Peace_WaveUITestsLaunchTests.swift */; };
+		E21076CC2C10AA34003F9FFA /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076CB2C10AA34003F9FFA /* OnboardingView.swift */; };
+		E21076CF2C10B2AD003F9FFA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076CE2C10B2AD003F9FFA /* HomeView.swift */; };
+		E21076D22C10C8BA003F9FFA /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076D12C10C8BA003F9FFA /* DashboardView.swift */; };
+		E21076D52C10C906003F9FFA /* TopicCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076D42C10C906003F9FFA /* TopicCardView.swift */; };
+		E21076E42C10CD67003F9FFA /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E21076E22C10CD67003F9FFA /* Model.xcdatamodeld */; };
+		E21076E72C10CECE003F9FFA /* StressLogFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076E62C10CECE003F9FFA /* StressLogFormView.swift */; };
+		E21076E92C10E034003F9FFA /* StressLogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076E82C10E033003F9FFA /* StressLogListView.swift */; };
+		E21076ED2C10E09C003F9FFA /* StressLogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076EC2C10E09C003F9FFA /* StressLogDetailView.swift */; };
+		E222A32F2C171166009D8738 /* StressSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222A32E2C171166009D8738 /* StressSummaryTests.swift */; };
+		E222A3312C171395009D8738 /* ExerciseSummaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222A3302C171395009D8738 /* ExerciseSummaryTests.swift */; };
+		E222A3332C1714A0009D8738 /* AudioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E222A3322C1714A0009D8738 /* AudioTests.swift */; };
+		E223D7C02C14A7AA00B3EAC9 /* BreathingExerciseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E223D7BF2C14A7AA00B3EAC9 /* BreathingExerciseView.swift */; };
+		E223D7C22C14A7FF00B3EAC9 /* Lotus_Flower_with_Lillypad.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E223D7C12C14A7FF00B3EAC9 /* Lotus_Flower_with_Lillypad.usdz */; };
+		E223D7CA2C14B0A800B3EAC9 /* Meditation-Bowls.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E223D7C92C14B0A800B3EAC9 /* Meditation-Bowls.mp3 */; };
+		E2968EAD2C11E1FC0076CD5A /* StressSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2968EAC2C11E1FC0076CD5A /* StressSummaryView.swift */; };
+		E2968EAF2C1220020076CD5A /* CalmBeachView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2968EAE2C1220020076CD5A /* CalmBeachView.swift */; };
+		E2968EBB2C122B330076CD5A /* AutumnForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2968EBA2C122B330076CD5A /* AutumnForest.swift */; };
+		E2968EBD2C122BCB0076CD5A /* Autumn_Forest.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E2968EBC2C122BCB0076CD5A /* Autumn_Forest.usdz */; };
+		E2968EC12C122E090076CD5A /* Fantasy_Town.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E2968EC02C122E090076CD5A /* Fantasy_Town.usdz */; };
+		E2968EC32C122E2D0076CD5A /* Tropical_Island.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E2968EC22C122E2D0076CD5A /* Tropical_Island.usdz */; };
+		E2968EC52C122E640076CD5A /* Calm-Beach.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2968EC42C122E640076CD5A /* Calm-Beach.mp3 */; };
+		E2968EC72C122E950076CD5A /* Autumn-Forest.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2968EC62C122E950076CD5A /* Autumn-Forest.mp3 */; };
+		E2968EC92C122EE80076CD5A /* Fairy-Tale.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2968EC82C122EE80076CD5A /* Fairy-Tale.mp3 */; };
+		E2968ECB2C122FC70076CD5A /* WinterNight.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2968ECA2C122FC70076CD5A /* WinterNight.swift */; };
+		E2968ECD2C12301D0076CD5A /* Winter_Night.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E2968ECC2C12301D0076CD5A /* Winter_Night.usdz */; };
+		E2968ECF2C1230C40076CD5A /* Winter-Storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2968ECE2C1230C40076CD5A /* Winter-Storm.mp3 */; };
+		E2968ED72C1232400076CD5A /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2968ED62C1232400076CD5A /* SpaceView.swift */; };
+		E2968ED92C1232790076CD5A /* Space_Nebula.usdz in Resources */ = {isa = PBXBuildFile; fileRef = E2968ED82C1232790076CD5A /* Space_Nebula.usdz */; };
+		E2968EDB2C1232CD0076CD5A /* Space-Sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2968EDA2C1232CD0076CD5A /* Space-Sound.mp3 */; };
+		E2968EDD2C1247F20076CD5A /* DetailCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2968EDC2C1247F20076CD5A /* DetailCardView.swift */; };
+		E2968EDF2C1248570076CD5A /* OnboardingPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2968EDE2C1248570076CD5A /* OnboardingPageView.swift */; };
+		E2AB4F292C118CC0002A8534 /* ExerciseLogFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB4F282C118CC0002A8534 /* ExerciseLogFormView.swift */; };
+		E2AB4F2B2C118E2A002A8534 /* ExerciseLogListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB4F2A2C118E2A002A8534 /* ExerciseLogListView.swift */; };
+		E2AB4F2D2C118E4D002A8534 /* ExerciseLogDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB4F2C2C118E4D002A8534 /* ExerciseLogDetailView.swift */; };
+		E2AB4F402C119A2E002A8534 /* Zen Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F362C119A2E002A8534 /* Zen Meditation.mp3 */; };
+		E2AB4F452C119B62002A8534 /* AudioListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB4F442C119B62002A8534 /* AudioListView.swift */; };
+		E2AB4F4A2C11A18F002A8534 /* AudioPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB4F492C11A18F002A8534 /* AudioPlayerView.swift */; };
+		E2AB4F4C2C11AC2B002A8534 /* Water Focused Relaxing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F4B2C11AC2B002A8534 /* Water Focused Relaxing.mp3 */; };
+		E2AB4F4E2C11AC52002A8534 /* Beautiful Stress Relief Ambient.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F4D2C11AC52002A8534 /* Beautiful Stress Relief Ambient.mp3 */; };
+		E2AB4F502C11AC83002A8534 /* Fall Asleep Like a Baby Relax Music blubon Relaxon.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F4F2C11AC83002A8534 /* Fall Asleep Like a Baby Relax Music blubon Relaxon.mp3 */; };
+		E2AB4F522C11ACA8002A8534 /* My Willowcare.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F512C11ACA8002A8534 /* My Willowcare.mp3 */; };
+		E2AB4F542C11ACC3002A8534 /* Relaxing Piano.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F532C11ACC3002A8534 /* Relaxing Piano.mp3 */; };
+		E2AB4F562C11ACDC002A8534 /* The Rockpool.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F552C11ACDC002A8534 /* The Rockpool.mp3 */; };
+		E2AB4F582C11AD00002A8534 /* Seeing the Light.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F572C11AD00002A8534 /* Seeing the Light.mp3 */; };
+		E2AB4F5A2C11AD20002A8534 /* Stress Relief Music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F592C11AD20002A8534 /* Stress Relief Music.mp3 */; };
+		E2AB4F5C2C11AD3E002A8534 /* Stress Relief Meditation.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E2AB4F5B2C11AD3E002A8534 /* Stress Relief Meditation.mp3 */; };
+		E2AB4F5F2C11B87E002A8534 /* ARListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB4F5E2C11B87E002A8534 /* ARListView.swift */; };
+		E2AB4F682C11BB9D002A8534 /* Peace_WaveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E21076BA2C10A8F2003F9FFA /* Peace_WaveUITests.swift */; };
+		E2AB4F702C11BF76002A8534 /* FairyGardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2AB4F6F2C11BF76002A8534 /* FairyGardenView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E21076AD2C10A8F2003F9FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E210768F2C10A8EE003F9FFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E21076962C10A8EE003F9FFA;
+			remoteInfo = "Peace Wave";
+		};
+		E21076B72C10A8F2003F9FFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E210768F2C10A8EE003F9FFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E21076962C10A8EE003F9FFA;
+			remoteInfo = "Peace Wave";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E20A8D7C2C15B74700CADEFF /* PieChartData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartData.swift; sourceTree = "<group>"; };
+		E20A8D7E2C15B77A00CADEFF /* PieChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChartView.swift; sourceTree = "<group>"; };
+		E20A8D812C15BF7100CADEFF /* StressLogCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLogCardView.swift; sourceTree = "<group>"; };
+		E20A8D832C15C07B00CADEFF /* MoodCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCardView.swift; sourceTree = "<group>"; };
+		E20A8D852C15C11B00CADEFF /* DetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCard.swift; sourceTree = "<group>"; };
+		E20A8D872C15C31E00CADEFF /* ExerciseTypeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseTypeCardView.swift; sourceTree = "<group>"; };
+		E20A8D892C15C4A700CADEFF /* ExerciseLogCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLogCardView.swift; sourceTree = "<group>"; };
+		E20A8D8B2C15FF6200CADEFF /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		E20A8D8D2C15FF9200CADEFF /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		E20A8D8F2C16015F00CADEFF /* AudioRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioRowView.swift; sourceTree = "<group>"; };
+		E20A8D912C1601FE00CADEFF /* ARViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewItem.swift; sourceTree = "<group>"; };
+		E20A8D932C16026500CADEFF /* ARCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARCardView.swift; sourceTree = "<group>"; };
+		E21076972C10A8EE003F9FFA /* Peace Wave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Peace Wave.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E210769A2C10A8EE003F9FFA /* Peace_WaveApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peace_WaveApp.swift; sourceTree = "<group>"; };
+		E210769C2C10A8EE003F9FFA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E210769E2C10A8F1003F9FFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E21076A12C10A8F1003F9FFA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E21076A32C10A8F1003F9FFA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		E21076A62C10A8F1003F9FFA /* Peace_Wave.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Peace_Wave.xcdatamodel; sourceTree = "<group>"; };
+		E21076AC2C10A8F2003F9FFA /* Peace WaveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peace WaveTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21076B02C10A8F2003F9FFA /* Peace_WaveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peace_WaveTests.swift; sourceTree = "<group>"; };
+		E21076B62C10A8F2003F9FFA /* Peace WaveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Peace WaveUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E21076BA2C10A8F2003F9FFA /* Peace_WaveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peace_WaveUITests.swift; sourceTree = "<group>"; };
+		E21076BC2C10A8F2003F9FFA /* Peace_WaveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Peace_WaveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E21076CB2C10AA34003F9FFA /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E21076CE2C10B2AD003F9FFA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E21076D12C10C8BA003F9FFA /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E21076D42C10C906003F9FFA /* TopicCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCardView.swift; sourceTree = "<group>"; };
+		E21076E32C10CD67003F9FFA /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		E21076E62C10CECE003F9FFA /* StressLogFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLogFormView.swift; sourceTree = "<group>"; };
+		E21076E82C10E033003F9FFA /* StressLogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLogListView.swift; sourceTree = "<group>"; };
+		E21076EC2C10E09C003F9FFA /* StressLogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressLogDetailView.swift; sourceTree = "<group>"; };
+		E222A32E2C171166009D8738 /* StressSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressSummaryTests.swift; sourceTree = "<group>"; };
+		E222A3302C171395009D8738 /* ExerciseSummaryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseSummaryTests.swift; sourceTree = "<group>"; };
+		E222A3322C1714A0009D8738 /* AudioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTests.swift; sourceTree = "<group>"; };
+		E223D7BF2C14A7AA00B3EAC9 /* BreathingExerciseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathingExerciseView.swift; sourceTree = "<group>"; };
+		E223D7C12C14A7FF00B3EAC9 /* Lotus_Flower_with_Lillypad.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Lotus_Flower_with_Lillypad.usdz; sourceTree = "<group>"; };
+		E223D7C92C14B0A800B3EAC9 /* Meditation-Bowls.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Meditation-Bowls.mp3"; sourceTree = "<group>"; };
+		E2968EAC2C11E1FC0076CD5A /* StressSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressSummaryView.swift; sourceTree = "<group>"; };
+		E2968EAE2C1220020076CD5A /* CalmBeachView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalmBeachView.swift; sourceTree = "<group>"; };
+		E2968EBA2C122B330076CD5A /* AutumnForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutumnForest.swift; sourceTree = "<group>"; };
+		E2968EBC2C122BCB0076CD5A /* Autumn_Forest.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Autumn_Forest.usdz; sourceTree = "<group>"; };
+		E2968EC02C122E090076CD5A /* Fantasy_Town.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Fantasy_Town.usdz; sourceTree = "<group>"; };
+		E2968EC22C122E2D0076CD5A /* Tropical_Island.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Tropical_Island.usdz; sourceTree = "<group>"; };
+		E2968EC42C122E640076CD5A /* Calm-Beach.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Calm-Beach.mp3"; sourceTree = "<group>"; };
+		E2968EC62C122E950076CD5A /* Autumn-Forest.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Autumn-Forest.mp3"; sourceTree = "<group>"; };
+		E2968EC82C122EE80076CD5A /* Fairy-Tale.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fairy-Tale.mp3"; sourceTree = "<group>"; };
+		E2968ECA2C122FC70076CD5A /* WinterNight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinterNight.swift; sourceTree = "<group>"; };
+		E2968ECC2C12301D0076CD5A /* Winter_Night.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Winter_Night.usdz; sourceTree = "<group>"; };
+		E2968ECE2C1230C40076CD5A /* Winter-Storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Winter-Storm.mp3"; sourceTree = "<group>"; };
+		E2968ED62C1232400076CD5A /* SpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
+		E2968ED82C1232790076CD5A /* Space_Nebula.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Space_Nebula.usdz; sourceTree = "<group>"; };
+		E2968EDA2C1232CD0076CD5A /* Space-Sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Space-Sound.mp3"; sourceTree = "<group>"; };
+		E2968EDC2C1247F20076CD5A /* DetailCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCardView.swift; sourceTree = "<group>"; };
+		E2968EDE2C1248570076CD5A /* OnboardingPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingPageView.swift; sourceTree = "<group>"; };
+		E2AB4F282C118CC0002A8534 /* ExerciseLogFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLogFormView.swift; sourceTree = "<group>"; };
+		E2AB4F2A2C118E2A002A8534 /* ExerciseLogListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLogListView.swift; sourceTree = "<group>"; };
+		E2AB4F2C2C118E4D002A8534 /* ExerciseLogDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseLogDetailView.swift; sourceTree = "<group>"; };
+		E2AB4F362C119A2E002A8534 /* Zen Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Zen Meditation.mp3"; sourceTree = "<group>"; };
+		E2AB4F442C119B62002A8534 /* AudioListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListView.swift; sourceTree = "<group>"; };
+		E2AB4F492C11A18F002A8534 /* AudioPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerView.swift; sourceTree = "<group>"; };
+		E2AB4F4B2C11AC2B002A8534 /* Water Focused Relaxing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Water Focused Relaxing.mp3"; sourceTree = "<group>"; };
+		E2AB4F4D2C11AC52002A8534 /* Beautiful Stress Relief Ambient.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Beautiful Stress Relief Ambient.mp3"; sourceTree = "<group>"; };
+		E2AB4F4F2C11AC83002A8534 /* Fall Asleep Like a Baby Relax Music blubon Relaxon.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Fall Asleep Like a Baby Relax Music blubon Relaxon.mp3"; sourceTree = "<group>"; };
+		E2AB4F512C11ACA8002A8534 /* My Willowcare.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "My Willowcare.mp3"; sourceTree = "<group>"; };
+		E2AB4F532C11ACC3002A8534 /* Relaxing Piano.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Relaxing Piano.mp3"; sourceTree = "<group>"; };
+		E2AB4F552C11ACDC002A8534 /* The Rockpool.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "The Rockpool.mp3"; sourceTree = "<group>"; };
+		E2AB4F572C11AD00002A8534 /* Seeing the Light.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Seeing the Light.mp3"; sourceTree = "<group>"; };
+		E2AB4F592C11AD20002A8534 /* Stress Relief Music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stress Relief Music.mp3"; sourceTree = "<group>"; };
+		E2AB4F5B2C11AD3E002A8534 /* Stress Relief Meditation.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Stress Relief Meditation.mp3"; sourceTree = "<group>"; };
+		E2AB4F5E2C11B87E002A8534 /* ARListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARListView.swift; sourceTree = "<group>"; };
+		E2AB4F6F2C11BF76002A8534 /* FairyGardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FairyGardenView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E21076942C10A8EE003F9FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21076A92C10A8F2003F9FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21076B32C10A8F2003F9FFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E20A8D802C15B7DA00CADEFF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E20A8D7C2C15B74700CADEFF /* PieChartData.swift */,
+				E20A8D8B2C15FF6200CADEFF /* Audio.swift */,
+				E20A8D8D2C15FF9200CADEFF /* AudioManager.swift */,
+				E20A8D912C1601FE00CADEFF /* ARViewItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E210768E2C10A8EE003F9FFA = {
+			isa = PBXGroup;
+			children = (
+				E21076992C10A8EE003F9FFA /* Peace Wave */,
+				E21076AF2C10A8F2003F9FFA /* Peace WaveTests */,
+				E21076B92C10A8F2003F9FFA /* Peace WaveUITests */,
+				E21076982C10A8EE003F9FFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E21076982C10A8EE003F9FFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E21076972C10A8EE003F9FFA /* Peace Wave.app */,
+				E21076AC2C10A8F2003F9FFA /* Peace WaveTests.xctest */,
+				E21076B62C10A8F2003F9FFA /* Peace WaveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E21076992C10A8EE003F9FFA /* Peace Wave */ = {
+			isa = PBXGroup;
+			children = (
+				E20A8D802C15B7DA00CADEFF /* Models */,
+				E2AB4F622C11BA84002A8534 /* 3D Models */,
+				E2AB4F2E2C119A13002A8534 /* Audio Files */,
+				E21076C92C10AA15003F9FFA /* Views */,
+				E210769A2C10A8EE003F9FFA /* Peace_WaveApp.swift */,
+				E210769C2C10A8EE003F9FFA /* ContentView.swift */,
+				E210769E2C10A8F1003F9FFA /* Assets.xcassets */,
+				E21076A32C10A8F1003F9FFA /* Persistence.swift */,
+				E21076A52C10A8F1003F9FFA /* Peace_Wave.xcdatamodeld */,
+				E21076E22C10CD67003F9FFA /* Model.xcdatamodeld */,
+				E21076A02C10A8F1003F9FFA /* Preview Content */,
+			);
+			path = "Peace Wave";
+			sourceTree = "<group>";
+		};
+		E21076A02C10A8F1003F9FFA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E21076A12C10A8F1003F9FFA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E21076AF2C10A8F2003F9FFA /* Peace WaveTests */ = {
+			isa = PBXGroup;
+			children = (
+				E21076B02C10A8F2003F9FFA /* Peace_WaveTests.swift */,
+				E222A32E2C171166009D8738 /* StressSummaryTests.swift */,
+				E222A3302C171395009D8738 /* ExerciseSummaryTests.swift */,
+				E222A3322C1714A0009D8738 /* AudioTests.swift */,
+			);
+			path = "Peace WaveTests";
+			sourceTree = "<group>";
+		};
+		E21076B92C10A8F2003F9FFA /* Peace WaveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E21076BA2C10A8F2003F9FFA /* Peace_WaveUITests.swift */,
+				E21076BC2C10A8F2003F9FFA /* Peace_WaveUITestsLaunchTests.swift */,
+			);
+			path = "Peace WaveUITests";
+			sourceTree = "<group>";
+		};
+		E21076C92C10AA15003F9FFA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB4F5D2C11B864002A8534 /* Augmented Reality */,
+				E2AB4F432C119B4F002A8534 /* Music */,
+				E2AB4F272C118CA5002A8534 /* Exercise */,
+				E21076E52C10CEAE003F9FFA /* Stress Monitor */,
+				E21076DF2C10CB3A003F9FFA /* Summary */,
+				E21076D62C10CA65003F9FFA /* DailyTip */,
+				E21076D32C10C8F4003F9FFA /* TopicCard */,
+				E21076D02C10C8A7003F9FFA /* Dashboard */,
+				E21076CD2C10B2A0003F9FFA /* Home */,
+				E21076CA2C10AA1E003F9FFA /* Onboarding */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E21076CA2C10AA1E003F9FFA /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E21076CB2C10AA34003F9FFA /* OnboardingView.swift */,
+				E2968EDE2C1248570076CD5A /* OnboardingPageView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		E21076CD2C10B2A0003F9FFA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E21076CE2C10B2AD003F9FFA /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E21076D02C10C8A7003F9FFA /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				E21076D12C10C8BA003F9FFA /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		E21076D32C10C8F4003F9FFA /* TopicCard */ = {
+			isa = PBXGroup;
+			children = (
+				E21076D42C10C906003F9FFA /* TopicCardView.swift */,
+			);
+			path = TopicCard;
+			sourceTree = "<group>";
+		};
+		E21076D62C10CA65003F9FFA /* DailyTip */ = {
+			isa = PBXGroup;
+			children = (
+				E2968EDC2C1247F20076CD5A /* DetailCardView.swift */,
+			);
+			path = DailyTip;
+			sourceTree = "<group>";
+		};
+		E21076DF2C10CB3A003F9FFA /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				E2968EAC2C11E1FC0076CD5A /* StressSummaryView.swift */,
+				E20A8D7E2C15B77A00CADEFF /* PieChartView.swift */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		E21076E52C10CEAE003F9FFA /* Stress Monitor */ = {
+			isa = PBXGroup;
+			children = (
+				E21076E62C10CECE003F9FFA /* StressLogFormView.swift */,
+				E21076E82C10E033003F9FFA /* StressLogListView.swift */,
+				E21076EC2C10E09C003F9FFA /* StressLogDetailView.swift */,
+				E20A8D812C15BF7100CADEFF /* StressLogCardView.swift */,
+				E20A8D832C15C07B00CADEFF /* MoodCardView.swift */,
+				E20A8D852C15C11B00CADEFF /* DetailCard.swift */,
+			);
+			path = "Stress Monitor";
+			sourceTree = "<group>";
+		};
+		E2AB4F272C118CA5002A8534 /* Exercise */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB4F282C118CC0002A8534 /* ExerciseLogFormView.swift */,
+				E2AB4F2A2C118E2A002A8534 /* ExerciseLogListView.swift */,
+				E2AB4F2C2C118E4D002A8534 /* ExerciseLogDetailView.swift */,
+				E20A8D872C15C31E00CADEFF /* ExerciseTypeCardView.swift */,
+				E20A8D892C15C4A700CADEFF /* ExerciseLogCardView.swift */,
+			);
+			path = Exercise;
+			sourceTree = "<group>";
+		};
+		E2AB4F2E2C119A13002A8534 /* Audio Files */ = {
+			isa = PBXGroup;
+			children = (
+				E223D7C92C14B0A800B3EAC9 /* Meditation-Bowls.mp3 */,
+				E2968EDA2C1232CD0076CD5A /* Space-Sound.mp3 */,
+				E2968ECE2C1230C40076CD5A /* Winter-Storm.mp3 */,
+				E2968EC82C122EE80076CD5A /* Fairy-Tale.mp3 */,
+				E2968EC62C122E950076CD5A /* Autumn-Forest.mp3 */,
+				E2968EC42C122E640076CD5A /* Calm-Beach.mp3 */,
+				E2AB4F592C11AD20002A8534 /* Stress Relief Music.mp3 */,
+				E2AB4F5B2C11AD3E002A8534 /* Stress Relief Meditation.mp3 */,
+				E2AB4F552C11ACDC002A8534 /* The Rockpool.mp3 */,
+				E2AB4F572C11AD00002A8534 /* Seeing the Light.mp3 */,
+				E2AB4F512C11ACA8002A8534 /* My Willowcare.mp3 */,
+				E2AB4F532C11ACC3002A8534 /* Relaxing Piano.mp3 */,
+				E2AB4F4F2C11AC83002A8534 /* Fall Asleep Like a Baby Relax Music blubon Relaxon.mp3 */,
+				E2AB4F4D2C11AC52002A8534 /* Beautiful Stress Relief Ambient.mp3 */,
+				E2AB4F4B2C11AC2B002A8534 /* Water Focused Relaxing.mp3 */,
+				E2AB4F362C119A2E002A8534 /* Zen Meditation.mp3 */,
+			);
+			path = "Audio Files";
+			sourceTree = "<group>";
+		};
+		E2AB4F432C119B4F002A8534 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB4F442C119B62002A8534 /* AudioListView.swift */,
+				E2AB4F492C11A18F002A8534 /* AudioPlayerView.swift */,
+				E20A8D8F2C16015F00CADEFF /* AudioRowView.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		E2AB4F5D2C11B864002A8534 /* Augmented Reality */ = {
+			isa = PBXGroup;
+			children = (
+				E2AB4F5E2C11B87E002A8534 /* ARListView.swift */,
+				E2AB4F6F2C11BF76002A8534 /* FairyGardenView.swift */,
+				E2968EAE2C1220020076CD5A /* CalmBeachView.swift */,
+				E2968EBA2C122B330076CD5A /* AutumnForest.swift */,
+				E2968ECA2C122FC70076CD5A /* WinterNight.swift */,
+				E2968ED62C1232400076CD5A /* SpaceView.swift */,
+				E223D7BF2C14A7AA00B3EAC9 /* BreathingExerciseView.swift */,
+				E20A8D932C16026500CADEFF /* ARCardView.swift */,
+			);
+			path = "Augmented Reality";
+			sourceTree = "<group>";
+		};
+		E2AB4F622C11BA84002A8534 /* 3D Models */ = {
+			isa = PBXGroup;
+			children = (
+				E223D7C12C14A7FF00B3EAC9 /* Lotus_Flower_with_Lillypad.usdz */,
+				E2968ED82C1232790076CD5A /* Space_Nebula.usdz */,
+				E2968ECC2C12301D0076CD5A /* Winter_Night.usdz */,
+				E2968EC22C122E2D0076CD5A /* Tropical_Island.usdz */,
+				E2968EC02C122E090076CD5A /* Fantasy_Town.usdz */,
+				E2968EBC2C122BCB0076CD5A /* Autumn_Forest.usdz */,
+			);
+			path = "3D Models";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E21076962C10A8EE003F9FFA /* Peace Wave */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21076C02C10A8F2003F9FFA /* Build configuration list for PBXNativeTarget "Peace Wave" */;
+			buildPhases = (
+				E21076932C10A8EE003F9FFA /* Sources */,
+				E21076942C10A8EE003F9FFA /* Frameworks */,
+				E21076952C10A8EE003F9FFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Peace Wave";
+			productName = "Peace Wave";
+			productReference = E21076972C10A8EE003F9FFA /* Peace Wave.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E21076AB2C10A8F2003F9FFA /* Peace WaveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21076C32C10A8F2003F9FFA /* Build configuration list for PBXNativeTarget "Peace WaveTests" */;
+			buildPhases = (
+				E21076A82C10A8F2003F9FFA /* Sources */,
+				E21076A92C10A8F2003F9FFA /* Frameworks */,
+				E21076AA2C10A8F2003F9FFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E21076AE2C10A8F2003F9FFA /* PBXTargetDependency */,
+			);
+			name = "Peace WaveTests";
+			productName = "Peace WaveTests";
+			productReference = E21076AC2C10A8F2003F9FFA /* Peace WaveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E21076B52C10A8F2003F9FFA /* Peace WaveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E21076C62C10A8F2003F9FFA /* Build configuration list for PBXNativeTarget "Peace WaveUITests" */;
+			buildPhases = (
+				E21076B22C10A8F2003F9FFA /* Sources */,
+				E21076B32C10A8F2003F9FFA /* Frameworks */,
+				E21076B42C10A8F2003F9FFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E21076B82C10A8F2003F9FFA /* PBXTargetDependency */,
+			);
+			name = "Peace WaveUITests";
+			productName = "Peace WaveUITests";
+			productReference = E21076B62C10A8F2003F9FFA /* Peace WaveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E210768F2C10A8EE003F9FFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					E21076962C10A8EE003F9FFA = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					E21076AB2C10A8F2003F9FFA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E21076962C10A8EE003F9FFA;
+					};
+					E21076B52C10A8F2003F9FFA = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = E21076962C10A8EE003F9FFA;
+					};
+				};
+			};
+			buildConfigurationList = E21076922C10A8EE003F9FFA /* Build configuration list for PBXProject "Peace Wave" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E210768E2C10A8EE003F9FFA;
+			productRefGroup = E21076982C10A8EE003F9FFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E21076962C10A8EE003F9FFA /* Peace Wave */,
+				E21076AB2C10A8F2003F9FFA /* Peace WaveTests */,
+				E21076B52C10A8F2003F9FFA /* Peace WaveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E21076952C10A8EE003F9FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2AB4F502C11AC83002A8534 /* Fall Asleep Like a Baby Relax Music blubon Relaxon.mp3 in Resources */,
+				E2AB4F402C119A2E002A8534 /* Zen Meditation.mp3 in Resources */,
+				E2968EC12C122E090076CD5A /* Fantasy_Town.usdz in Resources */,
+				E2968ED92C1232790076CD5A /* Space_Nebula.usdz in Resources */,
+				E21076A22C10A8F1003F9FFA /* Preview Assets.xcassets in Resources */,
+				E2AB4F5C2C11AD3E002A8534 /* Stress Relief Meditation.mp3 in Resources */,
+				E2968EDB2C1232CD0076CD5A /* Space-Sound.mp3 in Resources */,
+				E2968ECF2C1230C40076CD5A /* Winter-Storm.mp3 in Resources */,
+				E2968EC52C122E640076CD5A /* Calm-Beach.mp3 in Resources */,
+				E2AB4F562C11ACDC002A8534 /* The Rockpool.mp3 in Resources */,
+				E2AB4F542C11ACC3002A8534 /* Relaxing Piano.mp3 in Resources */,
+				E2AB4F5A2C11AD20002A8534 /* Stress Relief Music.mp3 in Resources */,
+				E2AB4F582C11AD00002A8534 /* Seeing the Light.mp3 in Resources */,
+				E2968ECD2C12301D0076CD5A /* Winter_Night.usdz in Resources */,
+				E2AB4F4E2C11AC52002A8534 /* Beautiful Stress Relief Ambient.mp3 in Resources */,
+				E223D7CA2C14B0A800B3EAC9 /* Meditation-Bowls.mp3 in Resources */,
+				E2AB4F4C2C11AC2B002A8534 /* Water Focused Relaxing.mp3 in Resources */,
+				E2968EC72C122E950076CD5A /* Autumn-Forest.mp3 in Resources */,
+				E2AB4F522C11ACA8002A8534 /* My Willowcare.mp3 in Resources */,
+				E2968EC92C122EE80076CD5A /* Fairy-Tale.mp3 in Resources */,
+				E223D7C22C14A7FF00B3EAC9 /* Lotus_Flower_with_Lillypad.usdz in Resources */,
+				E2968EC32C122E2D0076CD5A /* Tropical_Island.usdz in Resources */,
+				E210769F2C10A8F1003F9FFA /* Assets.xcassets in Resources */,
+				E2968EBD2C122BCB0076CD5A /* Autumn_Forest.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21076AA2C10A8F2003F9FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21076B42C10A8F2003F9FFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E21076932C10A8EE003F9FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2968ECB2C122FC70076CD5A /* WinterNight.swift in Sources */,
+				E2AB4F2B2C118E2A002A8534 /* ExerciseLogListView.swift in Sources */,
+				E223D7C02C14A7AA00B3EAC9 /* BreathingExerciseView.swift in Sources */,
+				E21076A42C10A8F1003F9FFA /* Persistence.swift in Sources */,
+				E2968EDD2C1247F20076CD5A /* DetailCardView.swift in Sources */,
+				E20A8D942C16026500CADEFF /* ARCardView.swift in Sources */,
+				E20A8D842C15C07B00CADEFF /* MoodCardView.swift in Sources */,
+				E20A8D8E2C15FF9200CADEFF /* AudioManager.swift in Sources */,
+				E21076E92C10E034003F9FFA /* StressLogListView.swift in Sources */,
+				E2968ED72C1232400076CD5A /* SpaceView.swift in Sources */,
+				E2AB4F2D2C118E4D002A8534 /* ExerciseLogDetailView.swift in Sources */,
+				E210769D2C10A8EE003F9FFA /* ContentView.swift in Sources */,
+				E2968EAF2C1220020076CD5A /* CalmBeachView.swift in Sources */,
+				E2AB4F702C11BF76002A8534 /* FairyGardenView.swift in Sources */,
+				E2AB4F5F2C11B87E002A8534 /* ARListView.swift in Sources */,
+				E20A8D922C1601FE00CADEFF /* ARViewItem.swift in Sources */,
+				E2AB4F452C119B62002A8534 /* AudioListView.swift in Sources */,
+				E21076D52C10C906003F9FFA /* TopicCardView.swift in Sources */,
+				E20A8D882C15C31E00CADEFF /* ExerciseTypeCardView.swift in Sources */,
+				E21076E72C10CECE003F9FFA /* StressLogFormView.swift in Sources */,
+				E20A8D7F2C15B77A00CADEFF /* PieChartView.swift in Sources */,
+				E2968EDF2C1248570076CD5A /* OnboardingPageView.swift in Sources */,
+				E20A8D8A2C15C4A700CADEFF /* ExerciseLogCardView.swift in Sources */,
+				E2968EBB2C122B330076CD5A /* AutumnForest.swift in Sources */,
+				E2968EAD2C11E1FC0076CD5A /* StressSummaryView.swift in Sources */,
+				E2AB4F292C118CC0002A8534 /* ExerciseLogFormView.swift in Sources */,
+				E20A8D7D2C15B74700CADEFF /* PieChartData.swift in Sources */,
+				E21076ED2C10E09C003F9FFA /* StressLogDetailView.swift in Sources */,
+				E210769B2C10A8EE003F9FFA /* Peace_WaveApp.swift in Sources */,
+				E20A8D862C15C11B00CADEFF /* DetailCard.swift in Sources */,
+				E2AB4F4A2C11A18F002A8534 /* AudioPlayerView.swift in Sources */,
+				E21076D22C10C8BA003F9FFA /* DashboardView.swift in Sources */,
+				E20A8D822C15BF7100CADEFF /* StressLogCardView.swift in Sources */,
+				E21076CF2C10B2AD003F9FFA /* HomeView.swift in Sources */,
+				E21076CC2C10AA34003F9FFA /* OnboardingView.swift in Sources */,
+				E21076A72C10A8F1003F9FFA /* Peace_Wave.xcdatamodeld in Sources */,
+				E21076E42C10CD67003F9FFA /* Model.xcdatamodeld in Sources */,
+				E20A8D902C16015F00CADEFF /* AudioRowView.swift in Sources */,
+				E20A8D8C2C15FF6200CADEFF /* Audio.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21076A82C10A8F2003F9FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E222A3332C1714A0009D8738 /* AudioTests.swift in Sources */,
+				E222A32F2C171166009D8738 /* StressSummaryTests.swift in Sources */,
+				E222A3312C171395009D8738 /* ExerciseSummaryTests.swift in Sources */,
+				E21076B12C10A8F2003F9FFA /* Peace_WaveTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E21076B22C10A8F2003F9FFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E21076BD2C10A8F2003F9FFA /* Peace_WaveUITestsLaunchTests.swift in Sources */,
+				E2AB4F682C11BB9D002A8534 /* Peace_WaveUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E21076AE2C10A8F2003F9FFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E21076962C10A8EE003F9FFA /* Peace Wave */;
+			targetProxy = E21076AD2C10A8F2003F9FFA /* PBXContainerItemProxy */;
+		};
+		E21076B82C10A8F2003F9FFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E21076962C10A8EE003F9FFA /* Peace Wave */;
+			targetProxy = E21076B72C10A8F2003F9FFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E21076BE2C10A8F2003F9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E21076BF2C10A8F2003F9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E21076C12C10A8F2003F9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Peace Wave/Preview Content\"";
+				DEVELOPMENT_TEAM = 52Z4V54RZ5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed to view AR";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madd.assignment2.part1.Peace-Wave";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E21076C22C10A8F2003F9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Peace Wave/Preview Content\"";
+				DEVELOPMENT_TEAM = 52Z4V54RZ5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Camera is needed to view AR";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madd.assignment2.part1.Peace-Wave";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E21076C42C10A8F2003F9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madd.assignment2.part1.Peace-WaveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peace Wave.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Peace Wave";
+			};
+			name = Debug;
+		};
+		E21076C52C10A8F2003F9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madd.assignment2.part1.Peace-WaveTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Peace Wave.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Peace Wave";
+			};
+			name = Release;
+		};
+		E21076C72C10A8F2003F9FFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madd.assignment2.part1.Peace-WaveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Peace Wave";
+			};
+			name = Debug;
+		};
+		E21076C82C10A8F2003F9FFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.madd.assignment2.part1.Peace-WaveUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Peace Wave";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E21076922C10A8EE003F9FFA /* Build configuration list for PBXProject "Peace Wave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21076BE2C10A8F2003F9FFA /* Debug */,
+				E21076BF2C10A8F2003F9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E21076C02C10A8F2003F9FFA /* Build configuration list for PBXNativeTarget "Peace Wave" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21076C12C10A8F2003F9FFA /* Debug */,
+				E21076C22C10A8F2003F9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E21076C32C10A8F2003F9FFA /* Build configuration list for PBXNativeTarget "Peace WaveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21076C42C10A8F2003F9FFA /* Debug */,
+				E21076C52C10A8F2003F9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E21076C62C10A8F2003F9FFA /* Build configuration list for PBXNativeTarget "Peace WaveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E21076C72C10A8F2003F9FFA /* Debug */,
+				E21076C82C10A8F2003F9FFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E21076A52C10A8F1003F9FFA /* Peace_Wave.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E21076A62C10A8F1003F9FFA /* Peace_Wave.xcdatamodel */,
+			);
+			currentVersion = E21076A62C10A8F1003F9FFA /* Peace_Wave.xcdatamodel */;
+			path = Peace_Wave.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		E21076E22C10CD67003F9FFA /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E21076E32C10CD67003F9FFA /* Model.xcdatamodel */,
+			);
+			currentVersion = E21076E32C10CD67003F9FFA /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E210768F2C10A8EE003F9FFA /* Project object */;
+}
